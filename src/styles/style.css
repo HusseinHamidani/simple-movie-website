@@ -1,0 +1,548 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.mainHomecontainer {
+  min-height: 100vh;
+  width: 100%;
+  background: url(../images/jokerBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+}
+
+.mainHome {
+  height: 100vh;
+  min-width: 100%;
+}
+
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px 0 10px;
+  position: absolute;
+}
+
+.navbar .hamp {
+  height: 35px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  z-index: 10000;
+  position: fixed;
+  top: 2%;
+  right: 5%;
+}
+
+.navbar .hamp .hampLine {
+  height: 5px;
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  margin-top: 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.navbar .hamp .hampLine:nth-child(1) {
+  width: 50%;
+}
+
+.navbar .hamp .hamblineOpen {
+  height: 5px;
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  margin-top: 5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: relative;
+  bottom: 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.navbar .hamp .hamblineOpen:nth-child(1) {
+  display: none;
+}
+
+.navbar .hamp .hamblineOpen:nth-child(2) {
+  position: relative;
+  top: 5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 100;
+}
+
+.navbar .website-title {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 600;
+}
+
+.navbar .ulbar {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  height: 100vh;
+  width: 100%;
+  background: #000000e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 100px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: 1000;
+}
+
+.navbar .ulbar li {
+  margin-top: 40px;
+}
+
+.navbar .ulbar li .ulbar-links {
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 1.4rem;
+}
+
+.navbar .ulbarOpen {
+  left: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.head {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.head .title-text-hanler {
+  margin-bottom: 12em;
+}
+
+.head .title-text-hanler h2 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5px;
+  text-shadow: 0 0 8px #111;
+}
+
+.head .inputHanler {
+  height: 10vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.head .inputHanler .inputLink {
+  color: #ffffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  border-radius: 25px;
+  padding: 12px 20px;
+  background: #501ae4;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.head .inputHanler .inputLink:hover {
+  -webkit-box-shadow: 0 0 20px #764cebcc;
+          box-shadow: 0 0 20px #764cebcc;
+}
+
+.aboutPorjectMainSection {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.aboutPorjectMainSection .backgroundRotate {
+  background: #6214bb;
+  height: 5vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+.aboutPorjectMainSection .backgroundRotate:nth-child(2) {
+  top: 120%;
+}
+
+.aboutPorjectMainSection .backgroundRotate:nth-child(3) {
+  top: 170%;
+}
+
+.aboutPorjectMainSection .aboutPorjectTitle {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+  z-index: 3;
+}
+
+.aboutPorjectMainSection .textAboutProject {
+  z-index: 3;
+  width: 100%;
+  padding: 20px;
+}
+
+.aboutPorjectMainSection .textAboutProject p {
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0 0 5px #1111;
+  color: #fff;
+}
+
+.mainContanerMovies {
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.mainMoviesContainer {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  padding-top: 11vh;
+  padding: 10vh 20px 0 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.mainMoviesContainer .datahanler {
+  height: 150px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10px 0 10px 0;
+  padding: 4px;
+  -webkit-box-shadow: 0px 0px 20px #282928;
+          box-shadow: 0px 0px 20px #282928;
+  cursor: pointer;
+}
+
+.mainMoviesContainer .datahanler .movieImage {
+  height: 100%;
+  width: 100px;
+}
+
+.mainMoviesContainer .datahanler .dataName {
+  color: #fff;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+.footer {
+  height: 30vh;
+  width: 100%;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 30px;
+  border-top: 2px solid #fff;
+}
+
+.footer .footerLinks {
+  color: #fff;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.footer .footerLinks:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+.movieDetails {
+  min-height: 100vh;
+  width: 100%;
+  background: black;
+}
+
+.movieDetails .moviesDetailHanler {
+  height: 100%;
+  width: 100%;
+}
+
+.movieDetails .moviesDetailHanler .movieImage {
+  width: 100%;
+  height: 60%;
+}
+
+.movieDetails .moviesDetailHanler .movieInfo {
+  height: 50vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.movieDetails .moviesDetailHanler .movieInfo .movieTitle {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+
+.movieDetails .moviesDetailHanler .movieInfo .Dhanlder {
+  width: 100%;
+  height: 40%;
+}
+
+.movieDetails .moviesDetailHanler .movieInfo .Dhanlder h4, .movieDetails .moviesDetailHanler .movieInfo .Dhanlder p, .movieDetails .moviesDetailHanler .movieInfo .Dhanlder a {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.movieDetails .moviesDetailHanler .movieInfo .Dhanlder h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.movieDetails .moviesDetailHanler .movieInfo .Dhanlder a {
+  padding: 12px 20px;
+  position: relative;
+  top: 20px;
+  background: #fff;
+  color: red;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  .navbar {
+    height: 10vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0 10px 0 10px;
+  }
+  .navbar .hamp {
+    display: none;
+  }
+  .navbar .ulbar {
+    height: 10vh;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: static;
+    padding: 0;
+    background: none;
+  }
+  .navbar .ulbar li {
+    margin: 0;
+    padding: 0;
+    padding: 12px 20px;
+  }
+  .movieDetails {
+    height: 50vh;
+  }
+  .movieDetails .moviesDetailHanler {
+    height: 100%;
+  }
+  .movieDetails .moviesDetailHanler .movieInfo {
+    height: 30vh;
+  }
+  .aboutPorjectMainSection .backgroundRotate {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .aboutPorjectMainSection .backgroundRotate {
+    width: 40vw;
+  }
+  .footer {
+    height: 40vh;
+  }
+  .movieDetails {
+    min-height: 160vh;
+    width: 100%;
+    background: black;
+  }
+  .movieDetails .moviesDetailHanler {
+    height: 100%;
+    width: 100%;
+  }
+  .movieDetails .moviesDetailHanler .movieImage {
+    width: 100%;
+    height: 60%;
+  }
+  .movieDetails .moviesDetailHanler .movieInfo {
+    height: 50vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+  .movieDetails .moviesDetailHanler .movieInfo .movieTitle {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+  .movieDetails .moviesDetailHanler .movieInfo .Dhanlder {
+    width: 100%;
+    height: 40%;
+  }
+  .movieDetails .moviesDetailHanler .movieInfo .Dhanlder h4, .movieDetails .moviesDetailHanler .movieInfo .Dhanlder p, .movieDetails .moviesDetailHanler .movieInfo .Dhanlder a {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+  }
+  .movieDetails .moviesDetailHanler .movieInfo .Dhanlder h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .movieDetails .moviesDetailHanler .movieInfo .Dhanlder a {
+    padding: 12px 20px;
+    position: relative;
+    top: 20px;
+    background: #fff;
+    color: red;
+    border-radius: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

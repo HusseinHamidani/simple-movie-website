@@ -1,0 +1,332 @@
+$poppins: 'Poppins', sans-serif
+$mochily: 'Mochiy Pop One', sans-serif
+*,*::before,*::after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    list-style: none
+    text-decoration: none
+
+//Home styling 
+.mainHomecontainer
+    min-height: 100vh
+    width: 100%
+    background: url(../images/jokerBackground.jpg)
+    background-size: cover
+    background-position: center
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    overflow-x: hidden
+.mainHome
+    height: 100vh
+    min-width: 100%
+// this is the navbar styling 
+.navbar
+    height: 10vh
+    width: 100%
+    background: rgba(0,0 ,0 ,.7 )
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 10px 0 10px
+    position: absolute
+    .hamp
+        height: 35px
+        width: 40px
+        display: flex
+        align-items: end
+        justify-content: center
+        flex-direction: column
+        cursor: pointer
+        z-index: 10000
+        position: fixed
+        top: 2%
+        right: 5%
+        .hampLine
+            height: 5px
+            width: 100%
+            background: #fff
+            border-radius: 3px
+            margin-top: 5px
+            transition: all .5s
+            &:nth-child(1)
+                width: 50%
+        .hamblineOpen
+            height: 5px
+            width: 100%
+            background: #fff
+            border-radius: 3px
+            margin-top: 5px
+            transform: rotate(45deg)
+            position: relative
+            bottom: 5px
+            transition: all .5s
+            &:nth-child(1)
+                display: none
+            &:nth-child(2)
+                position: relative
+                top: 5px
+                transform: rotate(-45deg)
+                z-index: 100
+    .website-title
+        font-size: 1.6rem
+        font-family: $poppins
+        color: #fff
+        font-weight: 600
+    .ulbar
+        position: fixed
+        top: 0
+        left: 100%
+        height: 100vh
+        width: 100%
+        background: #000000e7
+        display: flex
+        align-items: center
+        flex-direction: column
+        padding-top: 100px
+        transition: all .5s
+        z-index: 1000
+        li
+            margin-top: 40px
+            .ulbar-links
+                color: #fff
+                padding: 8px 12px
+                font-size: 1.4rem
+    .ulbarOpen
+        left: 0
+        transition: all .5s
+//home styling 
+.head
+    height: 100vh
+    width: 100%
+    background: rgba(0,0 ,0 ,.4 )
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    .title-text-hanler
+        margin-bottom: 12em
+        h2
+            color: #ffffff
+            font-family: $poppins
+            margin-bottom: 5px
+            text-shadow: 0 0 8px #111
+    .inputHanler
+        height: 10vh
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        .inputLink
+            color: #ffffffff
+            font-family: $poppins
+            font-size: 1.6rem
+            border-radius: 25px
+            padding: 12px 20px
+            background: rgb(80, 26, 228)
+            transition: all .5s
+            &:hover
+                box-shadow: 0 0 20px #764cebcc
+.aboutPorjectMainSection
+    min-height: 100vh
+    width: 100%
+    background: #000
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    overflow: hidden
+    .backgroundRotate
+        background: #6214bb
+        height: 5vh
+        width: 100vw
+        position: absolute
+        z-index: 1
+        transform: rotate(-25deg)
+        &:nth-child(2)
+            top: 120%
+        &:nth-child(3)
+            top: 170%
+    .aboutPorjectTitle
+        color: #ffffff
+        font-family: $poppins
+        margin-bottom: 20px
+        z-index: 3
+
+    .textAboutProject
+        z-index: 3
+        width: 100%
+        padding: 20px
+        p
+            font-family: $poppins
+            text-shadow: 0 0 5px #1111
+            color: #fff
+.mainContanerMovies
+    min-height: 100vh
+    min-width: 100%
+.mainMoviesContainer
+    height: 100%
+    width: 100%
+    background: #000
+    padding-top: 11vh
+    padding: 10vh 20px 0 20px
+    display: grid
+    grid-template-rows: auto
+    grid-template-columns: 1fr
+    .datahanler
+        height: 150px
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-around
+        margin: 10px 0 10px 0
+        padding: 4px
+        box-shadow: 0px 0px 20px #282928
+        cursor: pointer
+        .movieImage
+            height: 100%
+            width: 100px
+        .dataName
+            color: #fff
+            margin-left: 10px
+            font-family: $poppins
+            font-size: 1.2rem
+//footer styleing 
+.footer
+    height: 30vh
+    width: 100%
+    background: #000
+    display: flex
+    align-items: start
+    justify-content: center
+    flex-direction: column
+    padding-left: 30px
+    border-top: 2px solid #fff
+    .footerLinks
+        color: #fff
+        margin-top: 20px
+        font-family: $poppins
+        font-size: 1.2rem
+        text-decoration: underline
+        &:nth-child(1)
+            margin-bottom: 40px
+.movieDetails
+    min-height: 100vh
+    width: 100%
+    background: black
+    .moviesDetailHanler
+        height: 100%
+        width: 100%
+        .movieImage
+            width: 100%
+            height: 60%
+        .movieInfo
+            height: 50vh
+            width: 100%
+            display: flex
+            align-items: flex-start
+            justify-content: center
+            flex-direction: column
+            padding: 20px
+            .movieTitle
+                color: #fff
+                font-family: $poppins
+                font-size: 1.6rem
+                margin-bottom: 30px
+            .Dhanlder
+                width: 100%
+                height: 40%
+                h4 , p ,a
+                    color: #ffffff
+                    font-family: $poppins
+                h4
+                    font-size: 1.2rem
+                    margin-bottom: 20px
+                a
+                    padding: 12px 20px
+                    position: relative
+                    top: 20px
+                    background: #fff
+                    color: red
+                    border-radius: 5px
+@media screen and ( min-width: 800px )
+    .navbar
+        height: 10vh
+        width: 100%
+        display: flex
+        align-items: center
+        margin: 0
+        padding: 0 10px 0 10px
+
+        .hamp
+            display: none
+        .ulbar
+            height: 10vh
+            width: 40%
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: row
+            position: static
+            padding: 0
+            background: none
+            li
+                margin: 0
+                padding: 0
+                padding: 12px 20px
+    .movieDetails
+        height: 50vh
+        .moviesDetailHanler
+            height: 100%
+            .movieInfo
+                height: 30vh
+    .aboutPorjectMainSection
+        .backgroundRotate
+            display: none
+@media screen and ( min-width: 1100px )
+    .aboutPorjectMainSection
+        .backgroundRotate
+            width: 40vw
+    .footer
+        height: 40vh
+    .movieDetails
+        min-height: 160vh
+        width: 100%
+        background: black
+        .moviesDetailHanler
+            height: 100%
+            width: 100%
+            .movieImage
+                width: 100%
+                height: 60%
+            .movieInfo
+                height: 50vh
+                width: 100%
+                display: flex
+                align-items: flex-start
+                justify-content: center
+                flex-direction: column
+                padding: 20px
+                .movieTitle
+                    color: #fff
+                    font-family: $poppins
+                    font-size: 1.6rem
+                    margin-bottom: 30px
+                .Dhanlder
+                    width: 100%
+                    height: 40%
+                    h4 , p ,a
+                        color: #ffffff
+                        font-family: $poppins
+                    h4
+                        font-size: 1.2rem
+                        margin-bottom: 20px
+                    a
+                        padding: 12px 20px
+                        position: relative
+                        top: 20px
+                        background: #fff
+                        color: red
+                        border-radius: 5px
